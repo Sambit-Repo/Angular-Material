@@ -1,0 +1,14 @@
+.grid1{
+  background-color: lightblue  
+}
+.grid2{
+    background-color: lightcoral  
+  }
+  .grid3{
+    background-color: lightgreen  
+  }
+  mat-grid-tile{
+      border-style: inset;
+      border-color: black
+  }
+ 

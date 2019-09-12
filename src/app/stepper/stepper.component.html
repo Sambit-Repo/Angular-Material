@@ -1,0 +1,67 @@
+<br><br><br>
+<mat-horizontal-stepper>
+    <mat-step label="Customer Name">
+        <p>Enter the Customer Name</p>
+        <button mat-stroked-button matStepperNext>Next</button>
+    </mat-step>
+
+    <mat-step label="Billing Address">
+        <p>Enter the Customer Address</p>
+        <button mat-stroked-button matStepperPrevious> Previous </button>&nbsp;&nbsp;&nbsp;
+        <button mat-stroked-button matStepperNext> Next </button>
+    </mat-step>
+
+    <mat-step label="Place Order">
+        <p>All Done</p>
+        <button mat-stroked-button matStepperPrevious> Previous </button>
+        &nbsp;&nbsp;&nbsp;
+        <button mat-stroked-button (click)="show()">Order</button>
+    </mat-step>
+
+</mat-horizontal-stepper>
+
+<br><br><br>
+
+<form #myformGroup>
+<mat-vertical-stepper #stepper>
+    <mat-step label="Parents' Name">
+        <p>Enter your Father's Name : <input type="text" ></p>
+        <button mat-stroked-button matStepperNext>Next</button>
+    </mat-step>
+
+    <mat-step label="Parents' Name">
+        <p>Enter your Mother's Name : <input type="text" ></p>
+        <button mat-stroked-button matStepperPrevious> Previous </button>&nbsp;&nbsp;&nbsp;
+        <button mat-stroked-button matStepperNext> Next </button>
+    </mat-step>
+
+    <mat-step label="All Done">
+        <p>All Done</p>
+        <button mat-stroked-button matStepperPrevious> Previous </button>
+        &nbsp;&nbsp;&nbsp;
+        <button mat-stroked-button (click)="myformGroup.reset();stepper.reset()">Reset</button>
+    </mat-step>
+
+</mat-vertical-stepper>
+</form>
+
+<br><br><br>
+
+<form #mfg>
+<mat-horizontal-stepper linear #stpr>
+    <mat-step label="Enter Your Name" completed=true>
+        <p>Your FirstName : <input type="text"></p>
+        <button mat-raised-button matStepperNext> Next </button>
+    </mat-step>
+    <mat-step label="Enter Your Name" completed=false optional>
+            <p>Your MiddleName : <input type="text"></p>
+            <button mat-raised-button matStepperPrevious> Previous </button>&nbsp;&nbsp;&nbsp;
+            <button mat-raised-button matStepperNext> Next </button>
+        </mat-step>
+        <mat-step label="Enter Your Name" completed=false>
+                <p>Your lastName : <input type="text"></p>
+                <button mat-raised-button matStepperPrevious> Previous </button>&nbsp;&nbsp;&nbsp;
+                <button mat-raised-button (click)="mfg.reset();stpr.reset()">Reset</button>
+            </mat-step>
+</mat-horizontal-stepper>
+</form>

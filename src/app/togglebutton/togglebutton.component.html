@@ -1,0 +1,48 @@
+<div>
+    <mat-button-toggle disableRipple #toggleBtn1 checked>Toggle1</mat-button-toggle>
+    {{toggleBtn1.checked}}
+
+    <br>
+    <br>
+    <br>
+
+    <mat-button-toggle #toggleBtn2 disabled>Toggle2</mat-button-toggle>
+    {{toggleBtn2.checked}}
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div>
+    <mat-button-toggle-group #toggleGrp="matButtonToggleGroup">
+        <mat-button-toggle value="angular">ANGULAR</mat-button-toggle>
+        <mat-button-toggle value="react">REACT</mat-button-toggle>
+        <mat-button-toggle value="vue">VUE</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGrp.value}}
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div>
+    <mat-button-toggle-group #toggleGrp1="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular1">ANGULAR1</mat-button-toggle>
+        <mat-button-toggle value="react1">REACT1</mat-button-toggle>
+        <mat-button-toggle value="vue1">VUE1</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGrp1.value}}
+</div>
+<div>
+    <mat-icon>visibility</mat-icon>
+    <mat-icon color="warn">add_alert </mat-icon>
+    <mat-icon color="accent">movie </mat-icon>
+    <mat-icon color="primary">games</mat-icon>
+
+</div>

@@ -1,0 +1,53 @@
+<br><br><br>
+ <!-- multi="true"  & hideToggle  we can add these 2 in <mat-accordion>  -->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+
+            <mat-panel-title>Angular Material</mat-panel-title>
+            <mat-panel-description>Total Duration : 3 Hour </mat-panel-description>
+
+        </mat-expansion-panel-header>
+
+        <ul>
+            <li>Grid</li>
+            <li>List</li>
+            <li>NavBar</li>
+            <li>Badges</li>
+            <li>Menu</li>
+        </ul>
+
+        <mat-action-row>
+            <button mat-button>
+                Add More Contents
+            </button>
+        </mat-action-row>
+
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel (opened)="panelState=true" (closed)="panelState=false">
+        <mat-expansion-panel-header>
+
+            <mat-panel-title>Angular Fundamentals</mat-panel-title>
+            <mat-panel-description>Total Duration : 2 Hour &nbsp;&nbsp; I am {{panelState ? 'opened' : 'closed'}}
+            </mat-panel-description>
+
+        </mat-expansion-panel-header>
+
+        <ul>
+            <li>Component</li>
+            <li>Module</li>
+            <li>Service</li>
+            <li>Pipe</li>
+            <li>Directives</li>
+        </ul>
+
+        <mat-action-row>
+            <button mat-button>
+                Add More Contents
+            </button>
+        </mat-action-row>
+
+    </mat-expansion-panel>
+</mat-accordion>

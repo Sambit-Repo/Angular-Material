@@ -1,0 +1,37 @@
+<br><br><br>
+
+<table mat-table [dataSource]="dataArray1" class="mat-elevation-z4">
+
+    <!-- for Name column -->
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element">{{element.name}}</td>
+    </ng-container>
+
+    <!-- for Edc column -->
+    <ng-container matColumnDef="edc">
+        <th mat-header-cell *matHeaderCellDef> Edc </th>
+        <td mat-cell *matCellDef="let element">{{element.edc}}</td>
+    </ng-container>
+
+    <!-- for Age column -->
+    <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef> Age </th>
+        <td mat-cell *matCellDef="let element">{{element.age}}</td>
+    </ng-container>
+
+    <!-- for Married column -->
+    <ng-container matColumnDef="married">
+        <th mat-header-cell *matHeaderCellDef> Married </th>
+        <td mat-cell *matCellDef="let element">{{element.married}}</td>
+    </ng-container>
+
+
+    <!-- for Row -->
+    <tr mat-header-row *matHeaderRowDef="columnList"></tr>
+    <!-- *matHeaderRowDef decides what and how(means oreder) the column header is displayed  -->
+    
+    <tr mat-row (click)="showData(row)" *matRowDef="let row ; columns: columnList1;"></tr>
+    <!-- *matRowDef decides what and how(means oreder) the column data is displayed  -->
+
+</table>

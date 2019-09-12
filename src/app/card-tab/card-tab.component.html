@@ -1,0 +1,28 @@
+<br><br><br>
+<mat-tab-group #tabRef (selectedTabChange)="show(tabRef.selectedIndex)">
+    <mat-tab label="Angular">Angular details</mat-tab>
+    <mat-tab label="React">React details</mat-tab>
+    <mat-tab label="Vue">Vue details</mat-tab>
+</mat-tab-group>
+<br><br><br>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Eastern Diamondback Rattlesnake</mat-card-title>
+        <mat-card-subtitle>The Most Venomous Snake</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image
+        src="https://3ezfh222wf7f3501pa3arzc0-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/blue-viper-venomous-poisonous-snake-Venomous-Snakes-ss-Featured.jpg">
+    <mat-card-content>
+        <p>
+            This type of rattlesnake roam the southeastern regions of the United States in lower coastal plains.
+            <br>You will also find them in southeast North Carolina to the Florida Keys, west to south Mississippi, and
+            East Louisiana.
+            <br>Eastern diamondback rattlesnakes grow to a length of 96″ which makes it our largest rattlesnake.
+            <br>It has also a reputation for being the most dangerous snake in North America.
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="warn">Like</button>
+        <button mat-raised-button color="accent">Share</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,24 @@
+<br><br><br>
+
+<h1>Doubt</h1>
+<br><br>
+
+<mat-form-field>
+    <input type="text" placeholder="pick one" matInput [matAutocomplete]="auto" [formControl]="myControl">
+    <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let obj of filteredOptions | async" [value]="obj">
+            {{obj}}
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<mat-form-field>
+    <input type="text" placeholder="Age is" matInput [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let obj of objArray" [value]="obj">
+           {{obj.name}} 
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>

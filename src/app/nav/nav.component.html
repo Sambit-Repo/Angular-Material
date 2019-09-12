@@ -1,0 +1,23 @@
+<br><br><br>
+<mat-toolbar class="navbar" color="primary">
+    <div>Code Runner</div>
+    <div>
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact Us</span>
+    </div>
+</mat-toolbar>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav (opened)="log('opened')" (closed)="log('closed')" mode="side" [(opened)]="opened">This is sidenav</mat-sidenav>
+    &nbsp;
+    <mat-sidenav-content> &nbsp; &nbsp;main content
+        <button (click)="opened = !opened"> Click Me</button>
+        <button (click)="sidenav.open()">open</button>
+        <button (click)="sidenav.close()">close</button>
+        <button (click)="sidenav.toggle()">toggle</button>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

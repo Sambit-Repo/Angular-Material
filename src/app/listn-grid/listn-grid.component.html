@@ -1,0 +1,57 @@
+<br><br><br>
+<mat-list dense>
+    <mat-list-item>1</mat-list-item>
+    <mat-list-item>2</mat-list-item>
+    <mat-list-item>3</mat-list-item>
+</mat-list>
+
+<mat-nav-list>
+    <a mat-list-item href="#">Home</a>
+    <a mat-list-item href="#">About</a>
+    <a mat-list-item href="#">Service</a>
+</mat-nav-list>
+
+<mat-list>
+    <mat-list-item>
+        <mat-icon matListIcon>home</mat-icon>
+        <h3 matLine>Heading1</h3>
+        <p matLine>Line1</p>
+    </mat-list-item>
+</mat-list>
+<mat-divider></mat-divider>
+<mat-list>
+    <mat-list-item>
+        <mat-icon matListIcon>folder</mat-icon>
+        <h3 matLine>Heading2</h3>
+        <p matLine>Line2</p>
+    </mat-list-item>
+</mat-list>
+
+<br><br><br>
+
+<!-- All in 1 coloumn -->
+<mat-grid-list cols="1" rowHeight="100px" class="grid1" gutterSize="30px">
+    <mat-grid-tile>Tile 1</mat-grid-tile>
+    <mat-grid-tile>Tile 2</mat-grid-tile>
+    <mat-grid-tile rowspan="2"> Tile 3
+        <br><br><br><br><br>
+        <p>It is taking space of 2 rows</p>
+    </mat-grid-tile>
+</mat-grid-list>
+<br><br><br>
+<!-- All in 2 coloumn -->
+<mat-grid-list cols="2" rowHeight="4:1" class="grid2" gutterSize="10px"> 
+    <mat-grid-tile colspan="2">Tile 4
+            <br><br><br><br><br>
+            <p>It is taking space of 2 coloumns</p>
+    </mat-grid-tile>
+    <mat-grid-tile>Tile 5</mat-grid-tile>
+    <mat-grid-tile>Tile 6</mat-grid-tile>
+</mat-grid-list>
+<br><br><br>
+<!-- All in 3 coloumn -->
+<mat-grid-list cols="3" rowHeight="fit" style="height:80px" class="grid3" gutterSize="50px">
+    <mat-grid-tile>Tile 7</mat-grid-tile>
+    <mat-grid-tile >Tile 8</mat-grid-tile>
+    <mat-grid-tile>Tile 9</mat-grid-tile>
+</mat-grid-list>

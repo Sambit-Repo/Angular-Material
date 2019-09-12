@@ -1,0 +1,74 @@
+<br><br><br>
+<mat-form-field appearance="fill" color="primary">
+    <input matInput required>
+    <mat-label>FirstName</mat-label>
+    <mat-hint align="end">min 5 characters</mat-hint>
+</mat-form-field>
+
+<br><br><br>
+<mat-form-field appearance="outline" floatLabel="auto" color="warn">
+    <input matInput>
+    <mat-label>Lastname</mat-label>
+    <mat-hint>min 5 characters</mat-hint>
+</mat-form-field>
+
+<br><br><br>
+<mat-form-field appearance="legacy" hideRequiredMarker floatLabel="never" color="accent">
+    <input matInput required>
+    <mat-label>Age</mat-label>
+    <mat-hint align="end">max 2 characters</mat-hint>
+</mat-form-field>
+
+<br><br><br>
+<mat-form-field appearance="standard" floatLabel="always" color="warn">
+    <input matInput>
+    <mat-label>Counrty</mat-label>
+    <mat-hint>max 10 characters</mat-hint>
+</mat-form-field>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<mat-form-field>
+    <mat-label>Topic</mat-label>
+    <mat-select>
+
+        <mat-option>None</mat-option>
+
+        <mat-optgroup label="FrontEnd">
+            <mat-option value="Angular">Angular</mat-option>
+            <mat-option value="React">React</mat-option>
+            <mat-option value="Vue">Vue</mat-option>
+        </mat-optgroup>
+
+        <mat-optgroup label="BackEnd">
+            <mat-option value="Java">Java</mat-option>
+            <mat-option value="c#">c#</mat-option>
+            <mat-option value="python">python</mat-option>
+        </mat-optgroup>
+    </mat-select>
+</mat-form-field>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<mat-form-field>
+    <mat-label>Topic</mat-label>
+    <mat-select multiple [(value)]="selectedValue">
+
+        <mat-option>None</mat-option>
+
+        <mat-optgroup label="Football">
+            <mat-option value="GoalKeeper">GoalKeeper</mat-option>
+            <mat-option value="Defender">Defender</mat-option>
+            <mat-option value="Midfielder">Midfielder</mat-option>
+            <mat-option value="Striker">Striker</mat-option>
+        </mat-optgroup>
+
+        <mat-optgroup label="Cricket">
+            <mat-option value="Batsman">Batsman</mat-option>
+            <mat-option value="WicketKepper">WicketKepper</mat-option>
+            <mat-option value="Bowler">Bowler</mat-option>
+        </mat-optgroup>
+    </mat-select>
+</mat-form-field>
+&nbsp;
+{{selectedValue}}

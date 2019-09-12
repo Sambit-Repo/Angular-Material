@@ -1,0 +1,52 @@
+<br><br><br>
+<h1>Check Boxes:</h1>
+<mat-checkbox>Package 1</mat-checkbox><br>
+<mat-checkbox labelPosition="before" color="warn">Package 2</mat-checkbox><br>
+<mat-checkbox labelPosition="before" color="accent">Package 3</mat-checkbox><br>
+<mat-checkbox color="primary">Package 4 </mat-checkbox>
+
+<br><br>
+<h1>Radio Buttons:</h1>
+<mat-radio-group>
+    <mat-radio-button>Question1</mat-radio-button>&nbsp;
+    <mat-radio-button color="warn">Question2</mat-radio-button>&nbsp;
+    <mat-radio-button color="accent">Question3</mat-radio-button>&nbsp;
+    <mat-radio-button color="primary">Question4</mat-radio-button>
+</mat-radio-group>
+
+<br><br>
+<h1>Date Picker:</h1>
+<mat-form-field>
+    <input matInput [matDatepicker]="myDatePicker">
+    <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker></mat-datepicker>
+
+</mat-form-field>
+
+&nbsp;&nbsp;
+<mat-form-field>
+    <input matInput [matDatepicker]="myDp">
+    <mat-datepicker-toggle [for]="myDp" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDp startView="multi-year"></mat-datepicker>
+</mat-form-field>
+
+&nbsp;&nbsp;
+<mat-form-field>
+    <input matInput [matDatepicker]="myDpk" [min]="minDate" [max]="maxDate">
+    <mat-datepicker-toggle [for]="myDpk" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDpk></mat-datepicker>
+</mat-form-field>
+
+&nbsp;&nbsp;
+<mat-form-field>
+    <input matInput [matDatepicker]="myDpkr" [matDatepickerFilter]="dateFilter" placeholder="choose a date">
+    <mat-datepicker-toggle [for]="myDpkr" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDpkr></mat-datepicker>
+</mat-form-field>
+
+&nbsp;&nbsp;
+<mat-form-field>
+    <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>

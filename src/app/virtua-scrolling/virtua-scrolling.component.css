@@ -1,0 +1,12 @@
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid aqua;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+.b{
+    height: 500px;
+}
